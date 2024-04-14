@@ -29,11 +29,13 @@ img_contact_form = Image.open("images/yt_contact_form.png")
 img_lottie_animation = Image.open("images/yt_lottie_animation.png")
 
 # ---- HEADER SECTION ----
+st.header("About Me",divider='blue')
+
 with st.container():
-    st.subheader("Hi, I am Rodrigo :wave:")
-    st.title("A Systems Engineer From Portugal!")
     st.write(
-        "I am passionate about technology and exploring new ways of applying my knowledge to real life problems and business settings."
+        """
+        I am passionate about technology and exploring new ways of applying my knowledge to real life problems and business settings.
+        """
     )
 
 # ---- WHAT I DO ----
