@@ -39,6 +39,12 @@ info = {'brief':
             """
         }
 
+info_fr = {'brief':
+            """
+            J'ai bada bi j'ai bada bah, oh la la la  
+            """
+        }
+
 # Experience --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #[[header, subheader, date, location, content, link, link_url], [...], etc.]
 

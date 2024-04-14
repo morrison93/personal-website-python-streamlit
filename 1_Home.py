@@ -31,20 +31,24 @@ img_lottie_animation = Image.open("images/yt_lottie_animation.png")
 
 st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
 #st.write('<style>div.st-bf{flex-direction:column;} div.st-ag{font-weight:bold;padding-right:10px;}</style>', unsafe_allow_html=True)
-
 language=st.radio("",("English","French"))
+
+
 # ---- HEADER SECTION ----
 st.header("About Me",divider='blue')
 
 col1, col2, col3 = st.columns([2 ,0.2, 1])
 
 with col1:
-    st.write(info['brief'])
-    st.markdown(f"###### 😄 Name: {info['name']}")
-    st.markdown(f"###### 👉 Study: {info['study']}")
-    st.markdown(f"###### 📍 Location: {info['location']}")
-    st.markdown(f"###### 📚 Interests: {info['interest']}")
-    st.markdown(f"###### 👀 Linkedin: {linkedin_link}")
+    if language == "English":
+        st.write(info['brief'])
+        st.markdown(f"###### 😄 Name: {info['name']}")
+        st.markdown(f"###### 👉 Study: {info['study']}")
+        st.markdown(f"###### 📍 Location: {info['location']}")
+        st.markdown(f"###### 📚 Interests: {info['interest']}")
+        st.markdown(f"###### 👀 Linkedin: {linkedin_link}")
+    else:
+        st.write(info_fr['brief'])
     
     with open("attachments/CV_SYS_EN_RodrigoRocha_2024.pdf", "rb") as file:
         pdf_file = file.read()
