@@ -16,12 +16,10 @@ lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fc
 img_contact_form = Image.open("images/yt_contact_form.png")
 img_lottie_animation = Image.open("images/yt_lottie_animation.png")
 
-st.title("Projects Page")
+st.header("Projects",divider='blue')
 
 # ---- PROJECTS ----
 with st.container():
-    st.write("---")
-    st.header("My Projects")
     st.write("In this section, you can check small projects/exercises that I do from time to time in order to upgrade my skills or trying some take on solutions for problems that I thought of. In this spirit I will sometimes provide the context of the so called project/exercise with some notes if needed and usually followed by some reference (github link or other).")
     image_column, text_column = st.columns((1, 2))
     with image_column:

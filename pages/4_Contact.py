@@ -10,12 +10,10 @@ def local_css(file_name):
 
 local_css("style/style.css")
 
-st.title("Contact me!")
+st.header("Get In Touch With Me!", divider="blue")
 
 # ---- CONTACT ----
 with st.container():
-    st.write("---")
-    st.header("Get In Touch With Me!")
     st.write("##")
 
     # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
