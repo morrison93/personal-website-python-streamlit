@@ -1,4 +1,5 @@
-import streamlit as st
+import streamlit as st 
+from constants import *
 
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
@@ -33,15 +34,19 @@ with st.container():
         st.empty()
 
 
+st.header("Other Links",divider='blue')
+
+st.markdown(f"##### 📞 Phone: {phone}")   
+st.markdown(f"##### ✉️ Email: {email}")
 with st.container():
-    st.write("---")
-    st.header("About this webpage")
-    st.write("##")
-    st.write("""
-            If you like this webpage I'm obliged to say, that I hate pretty much every aspect of front-end development and I can say quite confidently that I am prety awful in it too.
-            I was looking for a fast solution for making a fast presentation webpage and I stumbled upon Sven's youtube channel and I also forked the repo that he made available.
-            Let it be known that I intend to iterate upon this webpage and it will distantiate itself from Sven's solution in time.
-            Being this said, I will leave the links for his youtube channel and the repository that gave origin to this webpage. 
-            """)
-    st.write("[Sven's YouTube Channel](https://youtube.com/c/CodingIsFun)")
-    st.write("[Sven's Streamlit Repo](https://github.com/Sven-Bo/personal-website-streamlit)")
+    col1, col2 = st.columns([0.1, 3])
+    with col1:
+        st.write(linkedin_logo, unsafe_allow_html=True)
+    with col2:
+        st.markdown(f"#####  Linkedin: {linkedin_link}")
+with st.container():
+    col1, col2 = st.columns([0.1, 3])
+    with col1:
+        st.write(github_logo, unsafe_allow_html=True)
+    with col2:
+        st.markdown(f"#####  Github: {github_link}")
