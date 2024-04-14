@@ -3,7 +3,7 @@
 ## Requirements
 ```
 streamlit_lottie==0.0.2
-streamlit==1.3.0
+streamlit==1.33.0
 requests==2.24.0
 Pillow==8.4.0
 protobuf~=3.19.0
@@ -14,7 +14,7 @@ watchdog==2.1.8
 * Terminal
     ```
     # vanilla terminal
-    streamlit run app.py
+    streamlit run 1_Home.py
 
     # poetry
     poetry add `cat requirements.txt`
@@ -30,15 +30,8 @@ watchdog==2.1.8
   * Stop debugging with Shift-F5
 
 ## Author
-* Sven from Coding Is Fun
-* YouTube: https://youtube.com/c/CodingIsFun
-* Website: https://pythonandvba.com
+* Rodrigo forked from Sven's Bo repo
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X7X47Q0EG)
-
-## Feedback
-#  If you have any feedback, please reach out to me at contact@pythonandvba.com
-#  ![Logo](https://www.pythonandvba.com/banner-img)
 
 ## Addendum
 [@pythoninthegrass](https://github.com/pythoninthegrass) additions
