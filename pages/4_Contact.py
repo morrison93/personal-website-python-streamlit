@@ -11,6 +11,9 @@ def local_css(file_name):
 
 local_css("style/style.css")
 
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
+language=st.radio("",("English","French"))
+
 st.header("Get In Touch With Me!", divider="blue")
 
 # ---- CONTACT ----
