@@ -41,8 +41,16 @@ info = {'brief':
 
 info_fr = {'brief':
             """
-            J'ai bada bi j'ai bada bah, oh la la la  
-            """
+            Diplômé en Ingénierie des Télécommunications et de l'Informatique en 2019, j'ai orienté ma carrière vers les Systèmes/Applications et l'Infrastructure.
+            J'adore travailler à ce niveau car je sens que cela me récompense avec une vision holistique et globale de tout le "puzzle".
+            Je suis passionné et curieux de la technologie et j'explore de nouvelles façons d'appliquer mes connaissances à des problèmes réels et à des environnements professionnels.
+            Je suis également en train d'apprendre et de développer des compétences en analyse de données.
+            Curieux, rationnel et analytique surtout.  
+            """,
+        'name':'Rodrigo Rocha', 
+        'study':'Instituto Superior Técnico',
+        'location':'Toulouse, France',
+        'interest':'Systems/Infrastructure Engineering, Product Management, Data Analysis, Finance, Economy, Business',
         }
 
 # Experience --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

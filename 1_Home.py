@@ -47,8 +47,13 @@ with col1:
         st.markdown(f"###### 📍 Location: {info['location']}")
         st.markdown(f"###### 📚 Interests: {info['interest']}")
         st.markdown(f"###### 👀 Linkedin: {linkedin_link}")
-    else:
+    if language == "French":
         st.write(info_fr['brief'])
+        st.markdown(f"###### 😄 Nom: {info_fr['name']}")
+        st.markdown(f"###### 👉 École: {info_fr['study']}")
+        st.markdown(f"###### 📍 Basée sur: {info_fr['location']}")
+        st.markdown(f"###### 📚 Intérêts: {info_fr['interest']}")
+        st.markdown(f"###### 👀 Linkedin: {linkedin_link}")
     
     with open("attachments/CV_SYS_EN_RodrigoRocha_2024.pdf", "rb") as file:
         pdf_file = file.read()
