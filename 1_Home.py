@@ -34,10 +34,18 @@ st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content
 language=st.radio("",("English","French"))
 
 
+if language == "English":
+    info=info
+    header=header_home
+if language == "French":
+    info=info_fr
+    header=header_home_fr
+
 # ---- HEADER SECTION ----
-st.header("About Me",divider='blue')
+st.header(header[0],divider='blue')
 
 col1, col2, col3 = st.columns([2 ,0.2, 1])
+
 
 with col1:
     if language == "English":
@@ -48,11 +56,11 @@ with col1:
         st.markdown(f"###### 📚 Interests: {info['interest']}")
         st.markdown(f"###### 👀 Linkedin: {linkedin_link}")
     if language == "French":
-        st.write(info_fr['brief'])
-        st.markdown(f"###### 😄 Nom: {info_fr['name']}")
-        st.markdown(f"###### 👉 École: {info_fr['study']}")
-        st.markdown(f"###### 📍 Basée sur: {info_fr['location']}")
-        st.markdown(f"###### 📚 Intérêts: {info_fr['interest']}")
+        st.write(info['brief'])
+        st.markdown(f"###### 😄 Nom: {info['name']}")
+        st.markdown(f"###### 👉 École: {info['study']}")
+        st.markdown(f"###### 📍 Basée sur: {info['location']}")
+        st.markdown(f"###### 📚 Intérêts: {info['interest']}")
         st.markdown(f"###### 👀 Linkedin: {linkedin_link}")
     
     with open("attachments/CV_SYS_EN_RodrigoRocha_2024.pdf", "rb") as file:
@@ -69,7 +77,7 @@ with col3:
 
 
 # skills --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-st.header("My skills",divider='blue')
+st.header(header[1],divider='blue')
 
 def skill_tab():
     rows,cols = len(info['skills'])//skill_col_size, skill_col_size
@@ -88,7 +96,7 @@ with st.spinner(text="Loading section..."):
 
 
 # ---- WHAT I DO ----
-st.header("Who Am I?",divider='blue')
+st.header(header[2],divider='blue')
 
 with st.container():
     

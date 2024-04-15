@@ -10,7 +10,8 @@ github_logo = '''
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <i class="fa-brands fa-github" style="font-size: 28px;"></i>                                                                           
 '''
-
+header_home = ["About Me", "My Skills", "Who Am I?"]
+header_home_fr = ["À propros de moi","Mes Compétences","Qui suis-je?"]
 # personal info (for main page) --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 info = {'brief':
               """
@@ -21,7 +22,7 @@ info = {'brief':
                 Curious, rational and analytical at core. 
               """,
         'name':'Rodrigo Rocha', 
-        'study':'Instituto Superior Técnico',
+        'study':'Instituto Superior Técnico - University of Lisbon',
         'location':'Toulouse, France',
         'interest':'Systems/Infrastructure Engineering, Product Management, Data Analysis, Finance, Economy, Business',
         'skills':['Linux','Windows','Apache','Confluence','JIRA','ServiceNow','Git','Github','Gitlab CI','Control M','PostgreSQL','Nagios','Grafana','ELK','Excel','JS7 Job Scheduler','Notion','Syslog','Sharepoint','Wireshark','MySQL','Azure DevOps','REST API','Docker','Kubernetes','Streamlit','Pandas','Shell','PowerShell','Python','XML','JSON','Matlab','Postman','Amazon S3','SCRUM','TCP/IP stack'],
@@ -48,9 +49,22 @@ info_fr = {'brief':
             Curieux, rationnel et analytique surtout.  
             """,
         'name':'Rodrigo Rocha', 
-        'study':'Instituto Superior Técnico',
+        'study':'Instituto Superior Técnico - Université de Lisbonne',
         'location':'Toulouse, France',
-        'interest':'Systems/Infrastructure Engineering, Product Management, Data Analysis, Finance, Economy, Business',
+        'interest':'Ingénierie Systèmes/Infrastructure, Gestion de Produit, Analyse de Données, Finance, Économie, Business',
+        'skills':['Linux','Windows','Apache','Confluence','JIRA','ServiceNow','Git','Github','Gitlab CI','Control M','PostgreSQL','Nagios','Grafana','ELK','Excel','JS7 Job Scheduler','Notion','Syslog','Sharepoint','Wireshark','MySQL','Azure DevOps','REST API','Docker','Kubernetes','Streamlit','Pandas','Shell','PowerShell','Python','XML','JSON','Matlab','Postman','Amazon S3','SCRUM','TCP/IP stack'],
+        'WAI':
+              """
+              Je m'appelle Rodrigo, je suis un ingénieur en télécommunications et informatique de Lisbonne, Portugal.
+              En tant qu'ingénieur, j'apporte un attention aux détails et des compétences en résolution de problèmes à chaque projet que j'entreprends. Je m'épanouis dans des environnements qui me mettent au défi de réfléchir et de trouver des solutions.
+              
+              Dehors du travail, je me développe dans différents axes, je me renseigne sur les investissements, j'apprends à jouer du piano et je m'entraîne à la salle du sport.
+              Ces passions enrichissent non seulement ma vie personnelle mais contribuent également à ma santé générale en contribuant à mes efforts professionnels.
+              
+              J'espère qu'avec cette page Web, je pourrai montrer et mettre à profit certaines de mes compétences techniques en construisant de petits projets afin d'exercer certaines compétences que je n'ai pas acquises ou que je suis encore en train d'acquérir.
+
+              N'hésitez pas à consulter toutes les informations présentes sur ce site. Et si quelque chose vous intéresse, pensez à me contacter via la section Contact.
+            """
         }
 
 # Experience --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
