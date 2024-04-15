@@ -10,6 +10,10 @@
 * Some exercise of integration with a back-end firstly with a DB like postgresSQL and later with an API to separate the logic from the client-side
 * I want to create a Posting area to present the books that I am reading maybe give an evaluation. 
 
+## Snapshots
+Contact page snapshot
+![Alt text](/images/snapshot_contact.png)
+
 ## Requirements
 ```
 streamlit_lottie==0.0.2
