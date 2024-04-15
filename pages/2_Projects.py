@@ -25,7 +25,7 @@ if 'language' in st.session_state:
     language=st.session_state['language']
     index_lang=st.session_state['index']
 
-st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;margin-top:-90px;} </style>', unsafe_allow_html=True)
 language=st.radio("",("English","French"),index=index_lang)
 
 if language == "English":
@@ -67,17 +67,3 @@ with st.container():
             """
         )
         st.markdown("[Watch Video...](https://youtu.be/FOULV9Xij_8)")
-
-
-with st.container():
-    st.write("---")
-    st.header("About this webpage")
-    st.write("##")
-    st.write("""
-            If you like this webpage I'm obliged to say, that I hate pretty much every aspect of front-end development and I can say quite confidently that I am prety awful in it too.
-            I was looking for a fast solution for making a fast presentation webpage and I stumbled upon Sven's youtube channel and I also forked the repo that he made available.
-            Let it be known that I intend to iterate upon this webpage and it will distantiate itself from Sven's solution in time.
-            Being this said, I will leave the links for his youtube channel and the repository that gave origin to this webpage. 
-            """)
-    st.write("[Sven's YouTube Channel](https://youtube.com/c/CodingIsFun)")
-    st.write("[Sven's Streamlit Repo](https://github.com/Sven-Bo/personal-website-streamlit)")

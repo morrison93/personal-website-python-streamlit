@@ -39,7 +39,7 @@ if 'language' in st.session_state:
 
 # ---- ---- Language Button ---- -----
 # Waiting for emojis support to replace the buttons
-st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;margin-top:-90px;} </style>', unsafe_allow_html=True)
 language=st.radio("",("English","French"),index=index_lang)
 
 if language not in st.session_state:

@@ -25,7 +25,7 @@ if 'language' in st.session_state:
     language=st.session_state['language']
     index_lang=st.session_state['index']
 
-st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;margin-top:-90px;} </style>', unsafe_allow_html=True)
 language=st.radio("",("English","French"),index=index_lang)
 
 if language == "English":
