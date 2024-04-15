@@ -1,4 +1,13 @@
+## Major Iterations
+* Added content regarding my personal experience and career.
+* Added support for multiple languages taking the idea from Rsirp0c of using a constants file.
+* Changed template visuals by changing the ./streamlit/config.toml 
+* Added multi-page with streamlit sidebar and /pages.
 
+## Future Ideas
+* Creation of a blog space. 
+* Some exercise of integration with a back-end firstly with a DB like postgresSQL and later with an API to separate the logic from the client-side
+* I want to create a Posting area to present the books that I am reading maybe give an evaluation. 
 
 ## Requirements
 ```
@@ -29,8 +38,11 @@ watchdog==2.1.8
   * Start debugging with F5
   * Stop debugging with Shift-F5
 
-## Author
-* Rodrigo forked from Sven's Bo repo
+## Author and References:
+* Rodrigo forked from Sven's Bo repo (https://github.com/Sven-Bo/personal-website-streamlit)
+* Template from Rsirp0c: (https://github.com/Rsirp0c/portfolio/blob/main/%F0%9F%8F%A0_Mainpage.py)
+
+Please bear in mind that although I took these two projects as references I have iterated and will still iterate upon these solutions.
 
 
 ## Addendum
