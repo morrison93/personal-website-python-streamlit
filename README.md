@@ -11,7 +11,7 @@
 
 2 - Creation of a back-end to interact with the client side. 
   2.2 - As a first instance I can try just to connect a postgreSQL database and maybe recover sentences(or wtv!) from it via a button.
-  2.3 - But ideally I want to create a small API that we'll hide the business logic from the client connecting to the database and returning the response.
+  2.3 - But ideally I want to create a small API that will hide the business logic from the client connecting to the database and returning the response.
 
 ## Snapshots
 Here are some snapshots of this whole project:
