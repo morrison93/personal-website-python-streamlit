@@ -5,7 +5,6 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 from constants import *
 
-
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="My Webpage", page_icon=":tada:", layout="wide")
 
@@ -14,7 +13,6 @@ def load_lottieurl(url):
     if r.status_code != 200:
         return None
     return r.json()
-
 
 # Use local CSS
 def local_css(file_name):

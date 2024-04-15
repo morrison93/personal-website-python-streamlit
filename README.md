@@ -6,13 +6,35 @@
 * Added multi-page with streamlit sidebar and /pages.
 
 ## Future Ideas
-* Creation of a blog space. 
-* Some exercise of integration with a back-end firstly with a DB like postgresSQL and later with an API to separate the logic from the client-side
-* I want to create a Posting area to present the books that I am reading maybe give an evaluation. 
+1 - Creation of a blog/posting space. 
+  1.1 - I want to create a posting area to present books that I'm reading or I have read and maybe debate about them. 
+
+2 - Creation of a back-end to interact with the client side. 
+  2.2 - As a first instance I can try just to connect a postgreSQL database and maybe recover sentences(or wtv!) from it via a button.
+  2.3 - But ideally I want to create a small API that we'll hide the business logic from the client connecting to the database and returning the response.
 
 ## Snapshots
-Contact page snapshot
+Here are some snapshots of this whole project:
+
+Home page snapshot:
+
+![TO BE ADDED](/images/snapshot_contact.png)
+
+Projects page snapshot:
+
+![TO BE ADDED](/images/snapshot_contact.png)
+
+Resume page snapshot:
+
+![TO BE ADDED](/images/snapshot_contact.png)
+
+Contact page snapshot:
+
 ![Alt text](/images/snapshot_contact.png)
+
+And you can check this project live over here:
+
+* To Be Added
 
 ## Requirements
 ```
@@ -44,11 +66,10 @@ watchdog==2.1.8
   * Stop debugging with Shift-F5
 
 ## Author and References:
-* Rodrigo forked from Sven's Bo repo (https://github.com/Sven-Bo/personal-website-streamlit)
+* morrison93 forked from Sven's Bo repo (https://github.com/Sven-Bo/personal-website-streamlit)
 * Template from Rsirp0c: (https://github.com/Rsirp0c/portfolio/blob/main/%F0%9F%8F%A0_Mainpage.py)
 
 Please bear in mind that although I took these two projects as references I have iterated and will still iterate upon these solutions.
-
 
 ## Addendum
 [@pythoninthegrass](https://github.com/pythoninthegrass) additions
