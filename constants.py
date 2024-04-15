@@ -135,6 +135,9 @@ Portfolio = { 1:[':blue[Deis]Evaluation - Course Evaluation Website',
             }
               
 # Contacts --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+header_contact_en = ["Get In Touch With Me!","Other Links"]
+header_contact_fr = ["Contactez moi!","Autres liens"]
 phone = "(+351) 93 258 23 18"
 email = "rodrigo.rocha582@gmail.com"
 linkedin_link = "www.linkedin.com/in/rodrigo-rocha"

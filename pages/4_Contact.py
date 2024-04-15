@@ -14,7 +14,13 @@ local_css("style/style.css")
 st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
 language=st.radio("",("English","French"))
 
-st.header("Get In Touch With Me!", divider="blue")
+# ---- Language Settings ----
+if language == "English":
+    header=header_contact_en
+if language == "French":
+    header=header_contact_fr
+
+st.header(header[0], divider="blue")
 
 # ---- CONTACT ----
 with st.container():
@@ -37,7 +43,7 @@ with st.container():
         st.empty()
 
 
-st.header("Other Links",divider='blue')
+st.header(header[1],divider='blue')
 
 st.markdown(f"##### 📞 Phone: {phone}")   
 st.markdown(f"##### ✉️ Email: {email}")
