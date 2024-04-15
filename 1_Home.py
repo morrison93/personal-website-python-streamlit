@@ -33,13 +33,17 @@ st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content
 #st.write('<style>div.st-bf{flex-direction:column;} div.st-ag{font-weight:bold;padding-right:10px;}</style>', unsafe_allow_html=True)
 language=st.radio("",("English","French"))
 
-
+# ---- Language Settings ----
 if language == "English":
-    info=info
-    header=header_home
+    info=info_en
+    header=header_home_en
+    file_name="CV_SYS_EN_RodrigoRocha_2024.pdf"
+    file_path="attachments/CV_SYS_EN_RodrigoRocha_2024.pdf"
 if language == "French":
     info=info_fr
     header=header_home_fr
+    file_name="CV_SYS_FR_RodrigoRocha_2024.pdf"
+    file_path="attachments/CV_SYS_FR_RodrigoRocha_2024.pdf"
 
 # ---- HEADER SECTION ----
 st.header(header[0],divider='blue')
@@ -63,13 +67,13 @@ with col1:
         st.markdown(f"###### 📚 Intérêts: {info['interest']}")
         st.markdown(f"###### 👀 Linkedin: {linkedin_link}")
     
-    with open("attachments/CV_SYS_EN_RodrigoRocha_2024.pdf", "rb") as file:
+    with open(file_path, "rb") as file:
         pdf_file = file.read()
 
     st.download_button(
         label="Download my :blue[resume]",
         data=pdf_file,
-        file_name="CV_SYS_EN_RodrigoRocha_2024.pdf",
+        file_name=file_name,
         mime="application/pdf")
 
 with col3:

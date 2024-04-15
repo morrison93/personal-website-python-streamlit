@@ -10,10 +10,10 @@ github_logo = '''
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <i class="fa-brands fa-github" style="font-size: 28px;"></i>                                                                           
 '''
-header_home = ["About Me", "My Skills", "Who Am I?"]
+header_home_en = ["About Me", "My Skills", "Who Am I?"]
 header_home_fr = ["À propros de moi","Mes Compétences","Qui suis-je?"]
 # personal info (for main page) --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-info = {'brief':
+info_en = {'brief':
               """
                 Graduated from a Telecommunication and Informatics Engineering in 2019 and I've since been developing my career towards Systems/Applications and Infrastructure.
                 I love to work at this level as I feel it rewards me with a holistic comprehensive view of the whole "puzzle".
