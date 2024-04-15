@@ -16,12 +16,29 @@ lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fc
 img_contact_form = Image.open("images/yt_contact_form.png")
 img_lottie_animation = Image.open("images/yt_lottie_animation.png")
 
-st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
-language=st.radio("",("English","French"))
+# ---- Language Settings ----
 
-st.header("Projects",divider='blue')
+if 'language' not in st.session_state:
+    st.session_state['language']="English"
+    st.session_state['index']=0
+if 'language' in st.session_state:
+    language=st.session_state['language']
+    index_lang=st.session_state['index']
+
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
+language=st.radio("",("English","French"),index=index_lang)
+
+if language == "English":
+    st.session_state['language']="English"
+    st.session_state['index']=0
+if language == "French":
+    st.session_state['language']="French"
+    st.session_state['index']=1
+
 
 # ---- PROJECTS ----
+st.header("Projects",divider='blue')
+
 with st.container():
     st.write("In this section, you can check small projects/exercises that I do from time to time in order to upgrade my skills or trying some take on solutions for problems that I thought of. In this spirit I will sometimes provide the context of the so called project/exercise with some notes if needed and usually followed by some reference (github link or other).")
     image_column, text_column = st.columns((1, 2))

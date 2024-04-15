@@ -29,21 +29,37 @@ lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fc
 img_contact_form = Image.open("images/yt_contact_form.png")
 img_lottie_animation = Image.open("images/yt_lottie_animation.png")
 
-st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
-#st.write('<style>div.st-bf{flex-direction:column;} div.st-ag{font-weight:bold;padding-right:10px;}</style>', unsafe_allow_html=True)
-language=st.radio("",("English","French"))
-
 # ---- Language Settings ----
+if 'language' not in st.session_state:
+    st.session_state['language']="English"
+    st.session_state['index']=0
+if 'language' in st.session_state:
+    language=st.session_state['language']
+    index_lang=st.session_state['index']
+
+# ---- ---- Language Button ---- -----
+# Waiting for emojis support to replace the buttons
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
+language=st.radio("",("English","French"),index=index_lang)
+
+if language not in st.session_state:
+    st.session_state['language']="English"
+    st.session_state['index']=0
+
 if language == "English":
     info=info_en
     header=header_home_en
     file_name="CV_SYS_EN_RodrigoRocha_2024.pdf"
     file_path="attachments/CV_SYS_EN_RodrigoRocha_2024.pdf"
+    st.session_state['language']="English"
+    st.session_state['index']=0
 if language == "French":
     info=info_fr
     header=header_home_fr
     file_name="CV_SYS_FR_RodrigoRocha_2024.pdf"
     file_path="attachments/CV_SYS_FR_RodrigoRocha_2024.pdf"
+    st.session_state['language']="French"
+    st.session_state['index']=1
 
 # ---- HEADER SECTION ----
 st.header(header[0],divider='blue')

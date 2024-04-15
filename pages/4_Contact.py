@@ -8,23 +8,36 @@ def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-
 local_css("style/style.css")
 
-st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
-language=st.radio("",("English","French"))
-
 # ---- Language Settings ----
+
+if 'language' not in st.session_state:
+    st.session_state['language']="English"
+    st.session_state['index']=0
+if 'language' in st.session_state:
+    language=st.session_state['language']
+    index_lang=st.session_state['index']
+
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: right;} </style>', unsafe_allow_html=True)
+language=st.radio("",("English","French"), index=index_lang)
+
 if language == "English":
     header=header_contact_en
+    st.session_state['language']="English"
+    st.session_state['index']=0
 if language == "French":
     header=header_contact_fr
+    st.session_state['language']="French"
+    st.session_state['index']=1
 
-st.header(header[0], divider="blue")
 
 # ---- CONTACT ----
+st.header(header[0], divider="blue")
+
 with st.container():
     st.write("##")
+    #st.write(st.session_state['language'])
 
     # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
     contact_form = """

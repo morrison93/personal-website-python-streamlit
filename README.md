@@ -1,4 +1,5 @@
 ## Major Iterations
+* Achieved language choice consistency throughout the pages.
 * Added content regarding my personal experience and career.
 * Added support for multiple languages taking the idea from Rsirp0c of using a constants file.
 * Changed template visuals by changing the ./streamlit/config.toml 
