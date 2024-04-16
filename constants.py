@@ -21,7 +21,8 @@ info_en = {'brief':
                 I'm also learning and trying to develop data analysis skills.
                 Curious, rational and analytical at core. 
               """,
-        'name':'Rodrigo Rocha', 
+        'name':'Rodrigo Rocha',
+        'description':'I\'m a telecommunication engineer that had been working with systems and infrastructure with a passion for technology.', 
         'study':'Instituto Superior Técnico - University of Lisbon',
         'location':'Toulouse, France',
         'interest':'Systems/Infrastructure Engineering, Product Management, Data Analysis, Finance, Economy, Business',
@@ -48,7 +49,8 @@ info_fr = {'brief':
             Je suis également en train d'apprendre et de développer des compétences en analyse de données.
             Curieux, rationnel et analytique surtout.  
             """,
-        'name':'Rodrigo Rocha', 
+        'name':'Rodrigo Rocha',
+        'description':'Je suis un ingénieur de télécommunication qui aime travailler sur des systèmes et infrastructures et a une passion pour la technologie.', 
         'study':'Instituto Superior Técnico - Université de Lisbonne',
         'location':'Toulouse, France',
         'interest':'Ingénierie Systèmes/Infrastructure, Gestion de Produit, Analyse de Données, Finance, Économie, Business',

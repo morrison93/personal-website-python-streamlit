@@ -48,11 +48,13 @@ if language == "English":
     header=header_home_en
     file_name="CV_SYS_EN_RodrigoRocha_2024.pdf"
     file_path="attachments/CV_SYS_EN_RodrigoRocha_2024.pdf"
+    label_str="Download my :blue[resume]"
     st.session_state['language']="English"
     st.session_state['index']=0
 if language == "French":
     info=info_fr
     header=header_home_fr
+    label_str="Télecharger mon :blue[CV]"
     file_name="CV_SYS_FR_RodrigoRocha_2024.pdf"
     file_path="attachments/CV_SYS_FR_RodrigoRocha_2024.pdf"
     st.session_state['language']="French"
@@ -84,7 +86,7 @@ with col1:
         pdf_file = file.read()
 
     st.download_button(
-        label="Download my :blue[resume]",
+        label=label_str,
         data=pdf_file,
         file_name=file_name,
         mime="application/pdf")
