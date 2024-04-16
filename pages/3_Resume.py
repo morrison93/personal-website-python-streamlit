@@ -82,7 +82,6 @@ with st.container():
 
 st.markdown("""---""")
 
-
 st.write('\n')
 st.subheader(header[0])
 st.write(
@@ -109,10 +108,21 @@ st.write(
 """
 )
 
+# --- Languages ---
+st.write('\n')
+st.subheader(header[2])
+st.write(
+    """
+- Portuguese - native
+- English - C2
+- French - C1
+- Spanish - C1
+""")
+
 st.markdown("""---""")
 
 # --- WORK HISTORY ---
-st.subheader(header[2])
+st.subheader(header[3]
 
 # --- JOB 1
 st.write("🚧", "**Senior Data Analyst | Ross Industries**")

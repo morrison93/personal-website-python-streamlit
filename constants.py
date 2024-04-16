@@ -70,8 +70,8 @@ info_fr = {'brief':
         }
 # Experience --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-headers_resume_en=["TODO_EN","Hard Skills","Work History"]
-headers_resume_fr=["TODO_FR","Compétences Techniques","Expérience Professionnelle"]
+headers_resume_en=["TODO_EN","Hard Skills","Languages","Work History"]
+headers_resume_fr=["TODO_FR","Compétences Techniques","Languages","Expérience Professionnelle"]
 
 
 
