@@ -36,6 +36,7 @@ if language == "English":
     label_str="Download my :blue[resume]"
     file_name="CV_SYS_EN_RodrigoRocha_2024.pdf"
     file_path="attachments/CV_SYS_EN_RodrigoRocha_2024.pdf"
+    header=headers_resume_en
 if language == "French":
     st.session_state['language']="French"
     st.session_state['index']=1
@@ -43,6 +44,7 @@ if language == "French":
     label_str="Télecharger mon :blue[CV]"
     file_name="CV_SYS_FR_RodrigoRocha_2024.pdf"
     file_path="attachments/CV_SYS_FR_RodrigoRocha_2024.pdf"
+    header=headers_resume_fr
 
 # ---- Resume ----
 
@@ -82,7 +84,7 @@ st.markdown("""---""")
 
 
 st.write('\n')
-st.subheader("Experience & Qualifications")
+st.subheader(header[0])
 st.write(
     """
 - ✔️ 7 Years expereince extracting actionable insights from data
@@ -94,7 +96,7 @@ st.write(
 
 # --- SKILLS ---
 st.write('\n')
-st.subheader("Hard Skills")
+st.subheader(header[1])
 st.write(
     """
 - Programming: Scripting - Python Shell and Powershell, Java, Matlab, C. 
@@ -110,7 +112,7 @@ st.write(
 st.markdown("""---""")
 
 # --- WORK HISTORY ---
-st.subheader("Work History")
+st.subheader(header[2])
 
 # --- JOB 1
 st.write("🚧", "**Senior Data Analyst | Ross Industries**")

@@ -68,8 +68,14 @@ info_fr = {'brief':
               N'hésitez pas à consulter toutes les informations présentes sur ce site. Et si quelque chose vous intéresse, pensez à me contacter via la section Contact.
             """
         }
-
 # Experience --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+headers_resume_en=["TODO_EN","Hard Skills","Work History"]
+headers_resume_fr=["TODO_FR","Compétences Techniques","Expérience Professionnelle"]
+
+
+
+
 #[[header, subheader, date, location, content, link, link_url], [...], etc.]
 
 Experience = [
