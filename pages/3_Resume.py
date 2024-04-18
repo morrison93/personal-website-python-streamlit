@@ -36,7 +36,11 @@ if language == "English":
     label_str="Download my :blue[resume]"
     file_name="CV_SYS_EN_RodrigoRocha_2024.pdf"
     file_path="attachments/CV_SYS_EN_RodrigoRocha_2024.pdf"
+    thesis_file_name="Dissertation_METI_Rodrigo_Rocha.pdf"
+    thesis_file_path="attachments/Dissertation_METI_Rodrigo_Rocha.pdf"
+    education=Education_Resume_EN
     header=headers_resume_en
+    experience=Experience_Resume_EN
 if language == "French":
     st.session_state['language']="French"
     st.session_state['index']=1
@@ -44,7 +48,11 @@ if language == "French":
     label_str="Télecharger mon :blue[CV]"
     file_name="CV_SYS_FR_RodrigoRocha_2024.pdf"
     file_path="attachments/CV_SYS_FR_RodrigoRocha_2024.pdf"
+    thesis_file_name="Dissertation_METI_Rodrigo_Rocha.pdf"
+    thesis_file_path="attachments/Dissertation_METI_Rodrigo_Rocha.pdf"
+    education=Education_Resume_FR
     header=headers_resume_fr
+    experience=Experience_Resume_FR
 
 # ---- Resume ----
 
@@ -122,43 +130,39 @@ st.write(
 st.markdown("""---""")
 
 # --- WORK HISTORY ---
-st.subheader(header[3]
+st.subheader(header[3])
 
 # --- JOB 1
-st.write("🚧", "**Senior Data Analyst | Ross Industries**")
-st.write("02/2020 - Present")
-st.write(
-    """
-- ► Used PowerBI and SQL to redeﬁne and track KPIs surrounding marketing initiatives, and supplied recommendations to boost landing page conversion rate by 38%
-- ► Led a team of 4 analysts to brainstorm potential marketing and sales improvements, and implemented A/B tests to generate 15% more client leads
-- ► Redesigned data model through iterations that improved predictions by 12%
-"""
-)
+st.write(experience[0][0])
+st.write(experience[0][1])
+st.write(experience[0][2])
 
 # --- JOB 2
 st.write('\n')
-st.write("🚧", "**Data Analyst | Liberty Mutual Insurance**")
-st.write("01/2018 - 02/2022")
-st.write(
-    """
-- ► Built data models and maps to generate meaningful insights from customer data, boosting successful sales eﬀorts by 12%
-- ► Modeled targets likely to renew, and presented analysis to leadership, which led to a YoY revenue increase of $300K
-- ► Compiled, studied, and inferred large amounts of data, modeling information to drive auto policy pricing
-"""
-)
+st.write(experience[1][0])
+st.write(experience[1][1])
+st.write(experience[1][2])
 
 # --- JOB 3
 st.write('\n')
-st.write("🚧", "**Data Analyst | Chegg**")
-st.write("04/2015 - 01/2018")
-st.write(
-    """
-- ► Devised KPIs using SQL across company website in collaboration with cross-functional teams to achieve a 120% jump in organic traﬃc
-- ► Analyzed, documented, and reported user survey results to improve customer communication processes by 18%
-- ► Collaborated with analyst team to oversee end-to-end process surrounding customers' return data
-"""
-)
+st.write(experience[2][0])
+st.write(experience[2][1])
+st.write(experience[2][2])
 
+# --- JOB 4
+st.write('\n')
+st.write(experience[3][0])
+st.write(experience[3][1])
+st.write(experience[3][2])
+
+# --- Education ---
+st.markdown("""---""")
+st.write('\n')
+st.subheader(header[4])
+
+st.write('\n')
+st.write(education[1])
+st.write(education[0])
 
 # --- Projects & Accomplishments ---
 #st.write('\n')
